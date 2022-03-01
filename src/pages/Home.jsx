@@ -14,17 +14,19 @@ const Home = ({ userData }) => {
           esse corporis assumenda reprehenderit, fugiat molestiae, deleniti
           accusantium nostrum, suscipit facere excepturi sint quis numquam.
         </p>
-        <Link to="/dashboard">
-          <button className="p-4 mx-2 bg-blue-500 rounded-lg text-white">
-            Dashboard
-          </button>
-        </Link>
+        <div className="text-center">
+          <Link to="/dashboard">
+            <button className="p-4 mx-2 bg-blue-500 rounded-lg text-white">
+              Dashboard
+            </button>
+          </Link>
+        </div>
       </div>
     );
   }
 
   return (
-    <div>
+    <div className="text-center">
       <h1 className="text-6xl text-center p-4">Welcome to Auth Portal</h1>
       <p className="p-4">
         Welcome to Auth Portal. A simple service which allows you to create

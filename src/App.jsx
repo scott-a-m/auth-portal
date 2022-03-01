@@ -6,6 +6,8 @@ import VerifyEmail from "./pages/VerifyEmail";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import Header from "./components/Header";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
@@ -44,6 +46,16 @@ function App() {
         <Route
           path="/register"
           element={<Register userData={userData} />}
+          exact
+        />
+        <Route
+          path="/user/forgot-password"
+          element={<ForgotPassword />}
+          exact
+        />
+        <Route
+          path="/user/reset-password"
+          element={<ResetPassword userData={userData} />}
           exact
         />
         <Route
